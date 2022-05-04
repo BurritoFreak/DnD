@@ -4,7 +4,15 @@ import Characters from "./components/Character.js";
 
 function App() {
   const [characters, setCharacters] = useState([]);
-  const loadCharacters = async () => {}
+  const loadCharacters = async () => {
+    try {
+      const res = await fetch('/api/characters');
+      const characters = await res.json();
+      setCharacters(characters);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <div className="App">
