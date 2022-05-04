@@ -5,9 +5,10 @@ import CharacterList from "./components/CharacterList";
 
 function App() {
   const [characters, setCharacters] = useState([]);
+  
   const loadCharacters = async () => {
     try {
-      const res = await fetch('/.netlify/functions/characters');
+      const res = await fetch('/api/characters');
       const characters = await res.json();
       setCharacters(characters);
     } catch (error) {
@@ -20,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="container mt-5">
         <Characters characterAdded={loadCharacters} />
         <CharacterList characters={characters} refreshCharacters={loadCharacters} />
     </div>
