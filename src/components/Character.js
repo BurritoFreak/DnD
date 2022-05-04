@@ -3,7 +3,7 @@ import React from 'react';
 const Character = ({ character, refreshCharacters }) => {
     const updatedCharacter = async () => {
         try {
-            await fetch('/api/characters/', {
+            await fetch('/.netlify/functions/courses', {
                 method: 'PUT',
                 body: JSON.stringify({ ...character}),
             });
@@ -15,7 +15,7 @@ const Character = ({ character, refreshCharacters }) => {
 
     const deleteCharacter = async () => {
         try {
-            await fetch('/api/characters/', {
+            await fetch('/.netlify/functions/courses', {
                 method: 'DELETE',
                 body: JSON.stringify({ id: character.id }),
             });
