@@ -21,10 +21,8 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
         <Characters characterAdded={loadCharacters} />
         <CharacterList characters={characters} refreshCharacters={loadCharacters} />
-      </header>
     </div>
   );
 }
