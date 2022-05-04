@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import Characters from "./components/Character.js";
 import CharacterList from "./components/CharacterList";
+import CharacterForm from "./components/CharacterForm";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <div className="container mt-5">
-        <Characters characterAdded={loadCharacters} />
+        <CharacterForm characterAdded={loadCharacters} />
         <CharacterList characters={characters} refreshCharacters={loadCharacters} />
     </div>
   );

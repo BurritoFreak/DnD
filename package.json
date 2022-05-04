@@ -12,6 +12,7 @@
     "bootstrap4": "^0.0.1-security",
     "dotenv": "^16.0.0",
     "jquery": "^3.6.0",
+    "netlify": "^11.0.1",
     "popper.js": "^1.16.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -41,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "netlify-cli": "^10.2.0"
   }
 }
