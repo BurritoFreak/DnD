@@ -33,7 +33,7 @@ const Character = ({ character, refreshCharacters }) => {
                     <h3>{character.level}</h3>
                 </div>
                 <div className="character-card-body">
-                    <h3>{character.character}</h3>
+                    <h3>{character.characters}</h3>
                 </div>
             </div>
         </div>
