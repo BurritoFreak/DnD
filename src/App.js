@@ -23,7 +23,6 @@ function App() {
 
   return (
     <div className="container mt-5">
-      <Characters characters={characters} refreshCharacters={loadCharacters}/>
       <CharacterList characters={characters} refreshCharacters={loadCharacters} />
     </div>
   );
