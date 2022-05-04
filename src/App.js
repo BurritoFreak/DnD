@@ -1,11 +1,16 @@
 import "./App.css";
-import Characters from "./characters/stats.js";
+import { useState } from "react";
+import Characters from "./components/Character.js";
 
 function App() {
+  const [characters, setCharacters] = useState([]);
+  const loadCharacters = async () => {}
+
   return (
     <div className="App">
       <header className="App-header">
-        <Characters />
+        <Characters playeradded={loadCharacters} />
+        <Characters characters={characters} refreshCharacters={loadCharacters} />
       </header>
     </div>
   );
