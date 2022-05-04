@@ -30,4 +30,3 @@ function App() {
 }
 
 export default App;
-//fetch('https://api.airtable.com/v0/app3VzwwwzznkRq5y/Character%20Sheets?api_key=key8V1kV2CxOIOxba')
