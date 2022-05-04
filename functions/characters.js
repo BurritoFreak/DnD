@@ -6,13 +6,13 @@ const deleteCharacter = require('./helpers/deleteCharacter');
 
 exports.handler = async (event) => {
     if (event.httpMethod === 'GET') {
-        return getCharacters(event);
+        return await getCharacters(event);
     } else if (event.httpMethod === 'POST') {
-        return createCharacter(event);
+        return await createCharacter(event);
     } else if (event.httpMethod === 'PUT') {
-        return updateCharacter(event);
+        return await updateCharacter(event);
     } else if (event.httpMethod === 'DELETE') {
-        return deleteCharacter(event);
+        return await deleteCharacter(event);
     } else {
         return formattedReturn(405, 'Method Not Allowed');
     }
