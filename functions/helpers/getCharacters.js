@@ -3,10 +3,8 @@ const formattedReturn = require('./formattedReturn');
 
 module.exports = async (event) => {
     try {
-        const characters = await table.select({
-            view: "Grid view"
-        }).all();
-        const formattedCharacters = characters.map(character => ({
+        const characters = await table.select().all();
+        const formattedCharacters = characters.map((character) => ({
             id: character.id,
             ...character.fields,
         }));
