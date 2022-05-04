@@ -1,8 +1,8 @@
-const formattedReturn = require('./formattedReturn');
-const getCharacters = require('./getCharacters');
-const createCharacter = require('./createCharacter');
-const updateCharacter = require('./updateCharacter');
-const deleteCharacter = require('./deleteCharacter');
+const formattedReturn = require('./helpers/formattedReturn');
+const getCharacters = require('./helpers/getCharacters');
+const createCharacter = require('./helpers/createCharacter');
+const updateCharacter = require('./helpers/updateCharacter');
+const deleteCharacter = require('./helpers/deleteCharacter');
 
 exports.handler = async (event) => {
     if (event.httpMethod === 'GET') {
