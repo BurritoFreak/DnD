@@ -4,9 +4,9 @@ import Character from "./Character";
 const CharacterList = ({ characters, refreshCharacters }) => {
     return (
         <div className="list-characters">
-        {characters.map((character, index) => (
+        {characters.map((character) => (
             <Character
-            key={index}
+            key={character.id}
             character={character}
             refreshCharacters={refreshCharacters}
             />

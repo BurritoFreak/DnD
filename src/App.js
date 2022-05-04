@@ -1,6 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import Characters from "./components/Character.js";
+import CharacterList from "./components/CharacterList";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -21,8 +22,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Characters playeradded={loadCharacters} />
-        <Characters characters={characters} refreshCharacters={loadCharacters} />
+        <Characters characterAdded={loadCharacters} />
+        <CharacterList characters={characters} refreshCharacters={loadCharacters} />
       </header>
     </div>
   );
