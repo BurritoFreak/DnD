@@ -9,7 +9,7 @@ function App() {
   
   const loadCharacters = async () => {
     try {
-      const res = await fetch('/.netlify/functions/courses');
+      const res = await fetch('/.netlify/functions/characters');
       const characters = await res.json();
       setCharacters(characters);
     } catch (error) {
