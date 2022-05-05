@@ -3,7 +3,7 @@ import Character from "./Character";
 
 const CharacterList = ({ characters, refreshCharacters }) => {
     return (
-        <div className="list-characters">
+        <div className="characters">
         {characters.map((character) => 
             <Character
             key={character.id}

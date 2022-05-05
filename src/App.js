@@ -23,8 +23,12 @@ function App() {
 
   return (
     <div className="container mt-5">
+      <div>
         <CharacterForm characterAdded={loadCharacters} />
+      </div>
+      <div className="character-list">
         <CharacterList characters={characters} refreshCharacters={loadCharacters} />
+      </div>
     </div>
   );
 }
