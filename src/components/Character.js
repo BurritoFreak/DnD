@@ -27,7 +27,7 @@ const Character = ({ character, refreshCharacters }) => {
     
     return (
         <div class="box">
-            <h2>{character.name}</h2>
+            <a href='#character'>{character.name}</a>
             <div className="character-card">
                 <div className="character-card-header">
                     <h3>{character.level}</h3>
