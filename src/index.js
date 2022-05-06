@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-const container = document.getElementById('root');
+const container = document.getElementById('ReactApp');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
 root.render(<React.StrictMode>
   <App />
