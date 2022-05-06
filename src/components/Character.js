@@ -28,7 +28,7 @@ const Character = ({ character, refreshCharacters }) => {
     
     return (
         <Route render = {({ history }) => (
-        <div class="box" onClick={() => { history.push('/'+{character.name})}}>
+        <div class="box" onClick={() => { history.push('/{character.name}')}}>
             <h2>{character.name}</h2>
             <div className="character-card">
                 <div className="character-card-header">
