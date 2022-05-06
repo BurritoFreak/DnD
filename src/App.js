@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Characters from "./components/Character";
 import CharacterList from "./components/CharacterList";
 
+
 function App() {
   const [characters, setCharacters] = useState([]);
   
