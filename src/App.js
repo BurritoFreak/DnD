@@ -2,7 +2,6 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import Characters from "./components/Character";
 import CharacterList from "./components/CharacterList";
-import CharacterForm from "./components/CharacterForm";
 
 function App() {
   const [characters, setCharacters] = useState([]);

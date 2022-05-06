@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Redirect } from 'react-router'
 
 const Character = ({ character, refreshCharacters }) => {
     const updatedCharacter = async () => {
@@ -26,7 +27,8 @@ const Character = ({ character, refreshCharacters }) => {
     };
     
     return (
-        <div class="box">
+        <Route render = {({ history }) => (
+        <div class="box" onClick={() => { history.push('/'+{character.name})}}>
             <h2>{character.name}</h2>
             <div className="character-card">
                 <div className="character-card-header">
@@ -37,6 +39,7 @@ const Character = ({ character, refreshCharacters }) => {
                 </div>
             </div>
         </div>
+        )} />
     )
 };
 
