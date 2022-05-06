@@ -87,6 +87,8 @@ h1 {
 
 .box h2 {
   font-size: 36px;
+  align-items: center;
+  justify-content: center;
 }
 
 .characters{
