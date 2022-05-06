@@ -89,7 +89,7 @@ h1 {
   font-size: 36px;
 }
 
-.character-list{
+.characters{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
