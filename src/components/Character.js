@@ -26,7 +26,7 @@ const Character = ({ character, refreshCharacters }) => {
     };
     
     return (
-        <div class="box" onclick="window.location.href = '/{character.name}';">
+        <div class="box" href='#box'>
             <h2>{character.name}</h2>
             <div className="character-card">
                 <div className="character-card-header">
