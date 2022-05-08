@@ -26,7 +26,7 @@ const Character = ({ character, refreshCharacters }) => {
     };
     
     return (
-        <div class="box">
+        <div class="box" onClick={window.location.href = '/{character.Player}'}>
             <h2>{character.Player}</h2>
             <div className="character-card">
                 <div className="character-card-body">
