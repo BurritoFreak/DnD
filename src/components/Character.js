@@ -26,7 +26,7 @@ const Character = ({ character, refreshCharacters }) => {
     };
     
     return (
-        <div class="box" onClick={window.location.href = '/' + character.Player}>
+        <div class="box">
             <h2>{character.Player}</h2>
             <div className="character-card">
                 <div className="character-card-body">
@@ -36,5 +36,6 @@ const Character = ({ character, refreshCharacters }) => {
         </div>
     )
 };
+//onClick={window.location.href = '/' + character.Player}
 
 export default Character;
