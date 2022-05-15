@@ -1,7 +1,10 @@
-import "./App.css";
+
 import { useEffect, useState } from "react";
-import Characters from "./components/Character";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import "./App.css";
 import CharacterList from "./components/CharacterList";
+import CharacterSheet from "./components/CharacterSheet";
 
 
 function App() {
@@ -22,11 +25,19 @@ function App() {
   }, []);
 
   return (
-    <div className="container mt-5">
-      <div className="character-sheet">
-        <CharacterList characters={characters} refreshCharacters={loadCharacters} />
-      </div>
+    <Router>
+    <div className="App">
+
+      <Switch>
+      <Route exact path="/" component={CharacterList(characters)} />
+        {characters.map((character) => 
+            <Route exact path="/{character.Player}" component={CharacterSheet(character)} />
+        )}
+      </Switch>
+
     </div>
+  </Router>
+      
   );
 }
 
