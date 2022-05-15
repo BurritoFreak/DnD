@@ -29,7 +29,7 @@ function App() {
     <div className="App">
 
       <Switch>
-      <Route exact path="/" component={CharacterList(characters)} />
+      <Route exact path="/" component={CharacterList({characters})} />
         {characters.map((character) => 
             <Route exact path="/{character.Player}" component={CharacterSheet({character})} />
         )}
