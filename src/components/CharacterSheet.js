@@ -3,15 +3,17 @@ import Character from "./Character";
 
 const CharacterList = ({ characters, refreshCharacters }) => {
     return (
-        <div className="characters">
+        <>
         {characters.map((character) => 
+            <section id={character.Player}>
             <Character
             key={character.id}
             character={character}
             refreshCharacters={refreshCharacters}
             />
+            </section>
         )}
-        </div>
+        </>
     );
 };
 
