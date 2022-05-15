@@ -29,7 +29,9 @@ function App() {
     <div className="App">
 
       <Switch>
-      <Route exact path="/" component={CharacterList({characters})} />
+      <Route path="/">
+        <CharacterList characters={characters} />
+      </Route>
       </Switch>
 
     </div>
