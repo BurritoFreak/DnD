@@ -3,7 +3,7 @@ import Character from "./Character";
 
 const CharacterSheet = ({ characters, refreshCharacters }) => {
     return (
-        <section id="character">
+        <section id="characters">
         <div className="characters">
         {characters.map((character) => 
             <Character

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, useParams } from 'react-router-dom';
 
 import "./App.css";
 import CharacterList from "./components/CharacterList";
@@ -32,7 +32,7 @@ function App() {
             <Route path="/">
                 <CharacterList characters={characters} />
             </Route> 
-            <Route path={"/character"}>
+            <Route path={"/characters"}>
                 <CharacterSheet character={characters} />
             </Route>
         </Switch>
