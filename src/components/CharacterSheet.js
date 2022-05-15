@@ -1,19 +1,14 @@
 import React from "react";
 import Character from "./Character";
 
-const CharacterSheet = ({ characters, refreshCharacters }) => {
+const CharacterSheet = ({ character, refreshCharacters }) => {
     return (
-        <>
-        {characters.map((character) => 
-            <section id={character.Player}>
-            <Character
-            key={character.id}
-            character={character}
-            refreshCharacters={refreshCharacters}
-            />
-            </section>
-        )}
-        </>
+        <section id={character.Player}>
+            <p>
+            character.Player
+            </p>
+
+        </section>
     );
 };
 

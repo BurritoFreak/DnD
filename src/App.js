@@ -34,7 +34,7 @@ function App() {
       </Route>
       {characters.map((character) => 
         <Route path={`/${character.Player}`}>
-            <CharacterSheet character={characters} />
+            <CharacterSheet character={character} />
         </Route>
     )}
       </Switch>
