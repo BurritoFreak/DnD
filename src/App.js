@@ -32,6 +32,11 @@ function App() {
       <Route path="/">
         <CharacterList characters={characters} />
       </Route>
+      {characters.map((character) => 
+        <Route path="/{character.Player}">
+            <CharacterSheet character={character} />
+        </Route>
+    )}
       </Switch>
 
     </div>
@@ -39,9 +44,5 @@ function App() {
       
   );
 }
-
-//{characters.map((character) => 
-//    <Route exact path="/{character.Player}" component={CharacterSheet({character})} />
-//)}
 
 export default App;
