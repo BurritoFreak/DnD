@@ -1,7 +1,7 @@
 import React from "react";
 import Character from "./Character";
 
-const CharacterList = ({ characters, refreshCharacters }) => {
+const CharacterSheet = ({ characters, refreshCharacters }) => {
     return (
         <>
         {characters.map((character) => 
@@ -17,4 +17,4 @@ const CharacterList = ({ characters, refreshCharacters }) => {
     );
 };
 
-export default CharacterList;
+export default CharacterSheet;
