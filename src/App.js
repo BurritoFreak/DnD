@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, useRouteMatch } from 'react-router-dom';
 
 import "./App.css";
 import CharacterList from "./components/CharacterList";
@@ -9,6 +9,7 @@ import CharacterSheet from "./components/CharacterSheet";
 
 function App() {
   const [characters, setCharacters] = useState([]);
+  let match = useRouteMatch();
   
   const loadCharacters = async () => {
     try {
@@ -29,11 +30,11 @@ function App() {
     <div className="App">
 
       <Switch>
-      <Route path="/">
+      <Route path={match.url}>
         <CharacterList characters={characters} />
       </Route>
       {characters.map((character) => 
-        <Route path={`/${character.Player}`}>
+        <Route path={`${match.url}/${character.Player}`}>
             <CharacterSheet character={character} />
         </Route>
     )}
