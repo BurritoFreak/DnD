@@ -35,6 +35,7 @@ function App() {
             <Route path={"/characters"}>
                 <CharacterSheet character={characters} />
             </Route>
+            <Route path="*" component={NotFound} />
         </Switch>
         </div>
         </Router>
@@ -48,3 +49,7 @@ function App() {
 //)}
 
 export default App;
+
+function NotFound() {
+    return <>You have landed on a page that doesn't exist</>;
+  }
