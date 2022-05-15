@@ -3,6 +3,7 @@ import Character from "./Character";
 
 const CharacterSheet = ({ characters, refreshCharacters }) => {
     return (
+        <section id="character">
         <div className="characters">
         {characters.map((character) => 
             <Character
@@ -12,6 +13,7 @@ const CharacterSheet = ({ characters, refreshCharacters }) => {
             />
         )}
         </div>
+        </section>
     );
 };
 

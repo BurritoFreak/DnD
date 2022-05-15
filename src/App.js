@@ -32,7 +32,7 @@ function App() {
             <Route path="/">
                 <CharacterList characters={characters} />
             </Route> 
-            <Route path={"/:character"}>
+            <Route path={"/character"}>
                 <CharacterSheet character={characters} />
             </Route>
         </Switch>
