@@ -27,14 +27,12 @@ const Character = ({ character, refreshCharacters }) => {
     
     return (
         <div class="box">
-        <a href = "/characters">
             <h2>{character.Player}</h2>
             <div className="character-card">
                 <div className="character-card-body">
                     <h3>{character.Name}</h3>
                 </div>
             </div>
-            </a>
         </div>
     )
 };
