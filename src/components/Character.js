@@ -26,10 +26,12 @@ const Character = ({ character, refreshCharacters }) => {
     };
     
     return (
+        <div class="box">
         <button class="custom-btn btn-15">
             <h2>{character.Player}</h2>
             <h3>{character.Name}</h3>
         </button>
+        </div>
     )
 };
 //onClick={window.location.href = '/' + character.Player}
