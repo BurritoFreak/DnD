@@ -6,7 +6,7 @@ import Health from "./Characters/Health";
 import Weapons from "./Characters/Weapons";
 import Traits from "./Characters/Traits";
 import Spells from "./Characters/Spells";
-
+import "./CharacterSheet.css";
 
 const CharacterSheet = ({ character }) => {
     return (
