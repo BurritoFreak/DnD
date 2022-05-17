@@ -26,11 +26,11 @@ const Character = ({ character, refreshCharacters }) => {
         }
     };
 
-    function addComponent(character) {
-        return (
-            <CharacterSheet character={character} refreshCharacters={refreshCharacters} />
-        )
-    }
+    //function addComponent(character) {
+    //    return (
+    //        <CharacterSheet character={character} refreshCharacters={refreshCharacters} />
+    //    )
+    //}
     
     return (
         <div class="box">
