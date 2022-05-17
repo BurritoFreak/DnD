@@ -3,7 +3,6 @@ import Character from "./Character";
 
 const CharacterList = ({ characters, refreshCharacters }) => {
     return (
-        <section id="home">
         <div className="characters">
         {characters.map((character) => 
             <Character
@@ -13,7 +12,6 @@ const CharacterList = ({ characters, refreshCharacters }) => {
             />
         )}
         </div>
-        </section>
     );
 };
 

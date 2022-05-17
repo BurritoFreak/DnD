@@ -25,19 +25,9 @@ function App() {
     }, []);
 
     return (
-        <Router>
         <div className="App">
-
-        <Switch>
-            <Route path="/">
-                <CharacterList characters={characters} />
-            </Route> 
-            <Route path={"/characters"}>
-                <CharacterSheet character={characters} />
-            </Route>
-        </Switch>
+            <CharacterList characters={characters} />
         </div>
-        </Router>
     );
 }
 
