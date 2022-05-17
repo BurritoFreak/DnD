@@ -1,12 +1,12 @@
 import React from "react";
 import Character from "./Character";
-import Stats from "./Stats";
-import Dice from "./Dice";
-import Profile from "./Profile";
-import Health from "./Health";
-import Weapons from "./Weapons";
-import Traits from "./Traits";
-import Spells from "./Spells";
+import Stats from "./Characters/Stats";
+import Dice from "./Characters/Dice";
+import Profile from "./Characters/Profile";
+import Health from "./Characters/Health";
+import Weapons from "./Characters/Weapons";
+import Traits from "./Characters/Traits";
+import Spells from "./Characters/Spells";
 
 
 const CharacterSheet = ({ character }) => {
