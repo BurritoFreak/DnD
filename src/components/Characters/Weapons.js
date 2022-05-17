@@ -7,7 +7,7 @@ const Weapons = ({ character }) => {
     <div class="riche-weapons-0"><input type="checkbox" id="riche-weapon"/>
         <label for="riche-weapon" class="riche-weapon-0"><i
                 class="th th-down-arrow"></i></label>
-        {character.Equipment.Weapons.map((weapons) => 
+        {JSON.parse(character.Equipment).Weapons.map((weapons) => 
             <div class="riche-weapons-1" id="first">
             <h1><span class="weapon1">{weapons.Name}</span></h1>
             <h2>ATTACK MOD: <span class="attack1">{weapons.AttackMod}</span></h2>
