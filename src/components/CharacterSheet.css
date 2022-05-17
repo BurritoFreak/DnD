@@ -1,0 +1,266 @@
+.riche {
+    --name: 'Riche Avacadoo';
+    --class: 'paladin ( lv.05 )';
+    --race: 'human';
+    --background: 'haunted one';
+    --alignment: 'lawful good';
+
+    --pro: '+3';
+
+    --str: '18';
+    --dex: '13';
+    --con: '18';
+    --int: '12';
+    --wis: '16';
+    --cha: '18';
+
+    --strmod: '+4';
+    --dexmod: '+1';
+    --conmod: '+4';
+    --intmod: '+1';
+    --wismod: '+2';
+    --chamod: '+4';
+
+    --strpro: '+7';
+    --dexpro: '+4';
+    --conpro: '+7';
+    --intpro: '+4';
+    --wispro: '+6';
+    --chapro: '+7';
+
+    --hp: '47';
+    --ac: '20';
+    --hd: 'd10';
+    --speed: '30ft';
+    --vision: '2mi';
+    --init: '+1';
+
+    --resist: 'none';
+    --immune: 'disease';
+
+    --w1name: 'longsword +2';
+    --w1attack: '+9';
+    --w1damage: '1d8 + 8';
+    --w1type: 'slashing';
+    --w1range: '5ft';
+
+    --w2name: 'javelin x5';
+    --w2attack: '+7';
+    --w2damage: '1d6 + 6';
+    --w2type: 'piercing';
+    --w2range: '30 - 120ft';
+
+    --languages: 'common, dwarvish, orcish, undercommon';
+
+    --platinum: '0';
+    --gold: '500';
+    --silver: '0';
+    --copper: '0';
+
+    --item1: 'longsword +2';
+    --item1desc: '';
+    --item2: 'metal shield';
+    --item2desc: '';
+    --item3: 'javelin x5';
+    --item3desc: '';
+    --item4: 'plate mail';
+    --item4desc: '';
+    --item5: 'chain mail';
+    --item5desc: '';
+    --item6: '';
+    --item6desc: '';
+    --item7: '';
+    --item7desc: '';
+    --item8: '';
+    --item8desc: '';
+    --item9: '';
+    --item9desc: '';
+    --item10: '';
+    --item10desc: '';
+    --item11: '';
+    --item11desc: '';
+    --item12: '';
+    --item12desc: '';
+    --item13: '';
+    --item13desc: '';
+    --item14: '';
+    --item14desc: '';
+    --item15: '';
+    --item15desc: '';
+
+    --skill1: 'divine sense';
+    --skill2: 'lay on hands';
+    --skill3: 'divine smite';
+    --skill4: 'fighting style';
+    --skill5: 'extra attack';
+    --skill6: 'aura of protection';
+    --skill7: 'aura of devotion';
+    --skill8: 'aura of courage';
+    --skill9: 'cleansing touch';
+    --skill10: 'purity of spirit';
+    --skill11: 'holy nimbus';
+
+    --spelldc: '15';
+    --spellbonus: '+7';
+    --spellslots: '6';
+}
+
+body { margin:0px!important; }
+.riche { width:100%;min-height:100vh; }
+.riche-0 { background:linear-gradient(to bottom, #DFCAB7, #A7ACB1);background-attachment:fixed;width:100%;height:100%; }
+.riche-1 { position:fixed;background-image:url(https://i.ibb.co/F4fKJVH/p0gVOEg.png);background-size:2.5%;opacity:1;height:100%;width:100%; }
+.riche-2 { padding:50px 0px;margin:0px auto;width:1100px;position:relative;z-index:1; }
+.riche-3 { background-color:#eeeeee;border-radius:35px;padding:35px;box-shadow: 0px 25px 20px -15px hsl(208 47% 20% / 25%); }
+.riche-4 { display: grid;grid-template-columns: 280px auto;background-color:#444444;border-radius:16px; }
+
+.riche-rolls { background-color:#444444;background-image:url(https://i.ibb.co/1LTgndH/JeanTol.png);background-position:bottom right;background-repeat:no-repeat;height:875px;border-radius:15px 0px 0px 15px;position:relative;z-index:1;padding:25px;color:#e3e3e3; }
+.riche-rolls-title { padding:38px 0px 0px 1px;text-align:right;font:800 60px DM Serif Display;line-height:30px;height:62px;overflow:hidden;background-color:#3b3b3b;text-transform:lowercase;font-style:italic;border-radius:14px 0px 15px 0px;letter-spacing:1px;margin:-25px 10px 0px -25px; }
+.riche-rolls-title span { margin-right:-5px;background:linear-gradient(to bottom right,#7EBAEE,#F0A06F);background-clip: text;-webkit-background-clip: text;color: transparent; }
+.riche-stat { margin-top:25px;background-color:#4b4b4b;border-radius:15px 15px 15px 15px;cursor: move; }
+.riche-stat-score { margin-left:-25px;position:absolute;width:100px;height:100px;background-color:#4b4b4b;border-radius:15px 15px 15px 15px;font:800 85px DM Serif Display;font-style:italic;line-height:120px;text-align:center;overflow:hidden;box-shadow:2px 2px 5px #3b3b3b; }
+.riche-stat-score .sts::before { margin-right:12px; position:relative; bottom:10px }
+.riche-stat h1 { position:absolute;margin:85px 0px 0px -10px;background:linear-gradient(to bottom right,#7EBAEE,#F0A06F);font:800 8px DM Serif Display;letter-spacing:3px;padding:5px 7px 5px 10px;border-radius:10px;color:#444444;box-shadow:2px 2px 5px #3b3b3b; }
+.riche-stat h1 .sts::before { content:var(--strmod); }
+.riche-stat-skills { padding-left:95px;font:12px DM Serif Display;line-height:20px;letter-spacing:1px;white-space:nowrap;min-height:100px;text-shadow:1px 1px 2px #373737;display:flex;flex-direction:column;justify-content:center; }
+.riche-stat-skills span { line-height:10px!important;background:linear-gradient(to bottom right,#7EBAEE,#F0A06F);background-clip: text;-webkit-background-clip: text;color: transparent;text-shadow:none!important; }
+.riche-stat-skills .sts::before { content:var(--strmod); }
+
+.riche-sheet { background-color:#e3e3e3;border-radius:0px 15px 15px 0px;mix-blend-mode:lighten; }
+.riche-sheet-waves { margin-bottom:-350px;width:100%;height:200px;clip-path:url(#riche-path);background:linear-gradient(to top right,#7EBAEE,#F0A06F);padding-bottom:150px;transform:scaleY(-1);border-radius:0px 0px 15px 0px;overflow:hidden; }
+.riche-sheet-waves-1 { height:435px;width:100%;background-image:url(https://i.ibb.co/BPKpfjw/Jeans-Thing.png);mix-blend-mode:multiply;background-position:top center;transform:scaleY(-1); }
+
+.riche-name { font:800 85px DM Serif Display;line-height:55px;position:absolute;z-index:10;white-space:nowrap;mix-blend-mode:lighten;text-transform:lowercase;padding:55px 0px 0px 90px; }
+.riche-name::before { display:block;content:var(--name);position:absolute;color:#444444;text-shadow:1px 1px 0px rgba(227,227,227,.5);margin:3px 0px 0px 3px; }
+.riche-name-1 { font:800 85px DM Serif Display;line-height:55px;position:absolute;z-index:10;white-space:nowrap;text-transform:lowercase;padding:55px 0px 0px 90px;color:#e3e3e3; }
+.riche-name-1::before { content:var(--name); }
+.riche-class .a::before { content:var(--race); }
+.riche-class .b::before { content:var(--class); }
+
+.riche input[type=radio] { display:none; }
+.riche input[type=radio] + label { position:absolute;z-index:1000;position:absolute;background-color:#e3e3e3;width:232px;height:8px;text-align:center;padding:9px 0px 8px 5px;border-radius:5px;margin:135px 0px 0px 90px;text-transform:uppercase;font:bold 8px DM Serif Display;line-height:8px;letter-spacing:5px;mix-blend-mode:lighten;box-shadow:3px 3px 0px #444444, 4px 4px 0px rgba(227,227,227,.5);cursor:pointer; }
+.riche label:hover { mix-blend-mode:normal!important; }
+
+
+
+.riche-img { height:300px;width:200px;padding:20px;border-radius:15px;background-color:#eeeeee;position:absolute;z-index:1;margin:210px 0px 0px 525px;box-shadow:3px 3px 5px rgba(68,68,68,.065);opacity:0;pointer-events:none;transition:.5s all; }
+.riche-img div { height:300px;width:200px;border-radius:5px;background-color:#444444;background-image:url(https://i.ibb.co/qN3DRf9/Joann.png);background-blend-mode:lighten; }
+.riche-dice { position:absolute;padding:25px 25px 15px 25px;width:190px;background-color:#eeeeee;border-radius:15px;margin:570px 0px 0px 525px;box-shadow:3px 3px 5px rgba(68,68,68,.065);opacity:0;pointer-events:none;transition:.5s all; }
+.riche-dice-1 { width:190px;display:flex;margin-bottom:10px; }
+.riche-dice-1 button { width:90px;background:#444444;border:none!important;border-radius:5px;margin-right:10px;font:bold 10px DM Serif Display;line-height:10px;text-transform:uppercase;letter-spacing:5px;padding:10px 0px 10px 5px;color:#e3e3e3;cursor:pointer;transition:.3s all; }
+.riche-dice-1 button:hover { opacity:.85; }
+.riche-dice-1 div { background-color:#e3e3e3;border-radius:5px;padding:10px 0px 10px 5px;font:800 10px DM Serif Display;line-height:10px;color:#444444;height:10px;width:90px;text-align:center; }
+
+.riche-health { position:absolute;z-index:1;background-color:#eeeeee;padding:20px;margin:160px 0px 0px 35px;border-radius:15px;width:380px;box-shadow:3px 3px 5px rgba(68,68,68,.065);opacity:0;pointer-events:none;transition:.5s all; }
+.riche-health h1 { margin:0px;background-color:#444444;border-radius:5px;padding:20px;font:800 59px DM Serif Display;line-height:55px;height:25px;color:#e3e3e3;letter-spacing:0px;text-transform:lowercase;font-style:italic;overflow:hidden; }
+.riche-health h2 { margin:0px 20px 0px 0px;font:800 20px DM Serif Display;line-height:23px;color:#e3e3e3; }
+.riche-health h2 span::before { content:var(--hp);padding-left:10px; }
+.riche-health h1 b { background:linear-gradient(to bottom right,#7EBAEE,#F0A06F);background-clip: text;-webkit-background-clip: text;color: transparent; }
+.riche-health h1 div input[type=number] { width:35px;padding:0px;border:none!important;background:transparent;font:800 20px DM Serif Display;line-height:25px;height:25px;color:#e3e3e3; }
+.riche-health h1 div { background-color:#3b3b3b;border-radius:5px;padding:5px 0px 5px 20px;margin:-5px;display:flex;float:right;letter-spacing:0px;  }
+.riche-health-1 { display:flex;margin-top:10px; }
+.riche-health-1 div { height:55px;width:55px;background-color:#e3e3e3;border-radius:5px;margin-right:10px;text-align:center;color:#444444; }
+.riche-health-1 div h3 { font:800 10px DM Serif Display;line-height:10px;letter-spacing:1px; }
+.riche-health-1 div span { font:800 20px DM Serif Display;line-height:0px;display:block;padding-top:22px; }
+.riche-health-1 .ac::before { content:var(--ac); }
+.riche-health-1 .speed::before { content:var(--speed); }
+.riche-health-1 .vision::before { content:var(--vision); }
+.riche-health-1 .hd::before { content:var(--hd); }
+.riche-health-1 .pro::before { content:var(--pro); }
+.riche-health-1 .inspo::before { content:var(--init); }
+
+.riche-weapons { margin:340px 0px 0px 25px;position:absolute;z-index:1;opacity:0;pointer-events:none;transition:.5s all; }
+.riche-weapons-0 { padding:10px;width:420px;height:200px;overflow:hidden; }
+.riche-weapons-1 { height:140px;background-color:#eeeeee;padding:30px 25px 30px 30px;border-radius:15px;width:365px;box-shadow:3px 3px 5px rgba(68,68,68,.065);color:#444444;margin-bottom:15px;transition:.3s all; }
+.riche-weapons-1 h1 { font:800 30px DM Serif Display;font-style:italic;line-height:25px;margin:0px 0px 10px 0px;letter-spacing:2px; }
+.riche-weapons-1 h1 .weapon1::before { content:var(--w1name); }
+.riche-weapons-1 h1 .weapon2::before { content:var(--w2name); }
+.riche-weapons-1 h2 { float:left;background-color:#e3e3e3;border-radius:5px;margin:0px 5px 5px 0px;font:800 10px DM Serif Display;line-height:10px;letter-spacing:3px;padding:10px; }
+.riche-weapons-1 h2 span { background:linear-gradient(to bottom right,#7EBAEE,#F0A06F);background-clip: text;-webkit-background-clip: text;color: transparent; }
+.riche-weapons-1 h2 .attack1::before { content:var(--w1attack); }
+.riche-weapons-1 h2 .attack2::before { content:var(--w2attack); }
+.riche-weapons-1 h2 .damage1::before { content:var(--w1damage); }
+.riche-weapons-1 h2 .damage2::before { content:var(--w2damage); }
+.riche-weapons-1 h2 .type1::before { content:var(--w1type); }
+.riche-weapons-1 h2 .type2::before { content:var(--w2type); }
+.riche-weapons-1 h2 .range1::before { content:var(--w1range); }
+.riche-weapons-1 h2 .range2::before { content:var(--w2range); }
+.riche-weapons-1 div { margin-top:85px;display:flex; }
+.riche-weapons-1 div button { width:120px;background:#444444;border:none!important;border-radius:5px;margin-right:5px;font:bold 10px DM Serif Display;line-height:10px;text-transform:uppercase;letter-spacing:3px;padding:10px 0px 10px 3px;color:#e3e3e3;cursor:pointer;transition:.3s all; }
+.riche-weapons-1 div button:hover { opacity:.85; }
+.riche-weapons-1 div h3 { margin:0px;padding:10px 0px;background-color:#e3e3e3;border-radius:5px;margin-right:10px;font:800 10px DM Serif Display;line-height:10px;width:30px;text-align:center; }
+
+.riche-weapons input[type=checkbox] { display:none; }
+.riche-weapon-0 { position:absolute;z-index:10;background-color:#444444;height:50px;width:50px;border-radius:100%;margin:20px 0px 0px 350px;text-align:center;cursor:pointer;transition:.3s all; }
+.riche-weapon-0 i::before { display:block;line-height:50px;background:linear-gradient(to bottom right,#7EBAEE,#F0A06F);background-clip: text;-webkit-background-clip: text;color: transparent; }
+#riche-weapon:checked + label { transform:rotate(180deg); }
+#riche-weapon:checked ~ #first { margin-top:-215px; }
+
+.riche-skills { position:absolute;z-index:1;margin:570px 0px 0px 35px;display:flex;opacity:0;pointer-events:none;transition:.5s all; }
+.riche-skills-left { box-shadow:3px 3px 5px rgba(68,68,68,.065);border-radius:15px;width:25px;height:220px;padding:23px;border:solid 2px #eeeeee;background:linear-gradient(to bottom,#7EBAEE,#F0A06F);margin-right:20px; }
+.riche-skills-left div { height:0px;width:0px;white-space:nowrap;font:800 30px DM Serif Display;line-height:25px;color:#eeeeee;transform:rotate(-90deg);margin-top:220px;letter-spacing:3px; }
+.riche-skills-right { box-shadow:3px 3px 5px rgba(68,68,68,.065);background-color:#eeeeee;border-radius:15px;padding:35px;width:255px; }
+.riche-skills-right-1 { height:200px;width:255px;overflow:auto;padding-right:15px;color:#444444; }
+.riche-skills-right-1::-webkit-scrollbar { width:5px;background-color:transparent; }
+.riche-skills-right-1::-webkit-scrollbar-thumb { border-radius:3px;background-color:#444444; }
+.riche-skills-right-1 input[type=checkbox] { display:none; }
+.riche-skills-right-1 input[type=checkbox] + label { font:800 25px DM Serif Display;line-height:20px;height:30px!important;display:block;text-transform:lowercase;font-style:italic;cursor:pointer;transition:.3s all; }
+.riche-skills-right-1 .skill1::before { content:var(--skill1); }
+.riche-skills-right-1 .skill2::before { content:var(--skill2); }
+.riche-skills-right-1 .skill3::before { content:var(--skill3); }
+.riche-skills-right-1 .skill4::before { content:var(--skill4); }
+.riche-skills-right-1 .skill5::before { content:var(--skill5); }
+.riche-skills-right-1 .skill6::before { content:var(--skill6); }
+.riche-skills-right-1 .skill7::before { content:var(--skill7); }
+.riche-skills-right-1 .skill8::before { content:var(--skill8); }
+.riche-skills-right-1 .skill9::before { content:var(--skill9); }
+.riche-skills-right-1 .skill10::before { content:var(--skill10); }
+.riche-skills-right-1 .skill11::before { content:var(--skill11); }
+.riche-skills-blurb { margin-bottom:5px;font:11px Roboto;line-height:14px;padding-right:15px;letter-spacing:.25px;text-align:justify;overflow:hidden;max-height:0px;transition:.5s all; }
+.riche-skills-blurb::-webkit-scrollbar { width:5px;background-color:transparent; }
+.riche-skills-blurb::-webkit-scrollbar-thumb { border-radius:3px;background-color:#444444; }
+#riche-skill1:checked + label, #riche-skill2:checked + label, #riche-skill3:checked + label, #riche-skill4:checked + label, #riche-skill5:checked + label, #riche-skill6:checked + label, #riche-skill7:checked + label, #riche-skill8:checked + label, #riche-skill9:checked + label, #riche-skill10:checked + label, #riche-skill11:checked + label { background:linear-gradient(to bottom right,#7EBAEE,#F0A06F);background-clip: text;-webkit-background-clip: text;color: transparent; }
+#riche-skill1:checked ~ .riche-skills-blurb, #riche-skill2:checked ~ .riche-skills-blurb,#riche-skill3:checked ~ .riche-skills-blurb, #riche-skill4:checked ~ .riche-skills-blurb,#riche-skill5:checked ~ .riche-skills-blurb, #riche-skill6:checked ~ .riche-skills-blurb,#riche-skill7:checked ~ .riche-skills-blurb, #riche-skill8:checked ~ .riche-skills-blurb,#riche-skill9:checked ~ .riche-skills-blurb, #riche-skill10:checked ~ .riche-skills-blurb,#riche-skill11:checked ~ .riche-skills-blurb { max-height:280px; }
+.locked { opacity:.2; }
+
+.riche-spell-stats { height:340px;width:240px;position:absolute;z-index:1;margin:160px 0px 0px 475px;opacity:0;pointer-events:none;transition:.5s all;display:flex;gap:10px;flex-wrap:wrap; }
+.riche-spell-stats-1 { background-color:#444444;border-radius:15px;box-shadow:3px 3px 5px rgba(68,68,68,.065);border:solid 3px #eeeeee;height:69px;width:64px;padding-right:5px;text-align:center; }
+.riche-spell-stats-1 div::before { content:var(--spelldc);display:block;color:#eeeeee;font:800 35px DM Serif Display;line-height:69px;font-style:italic; }
+#SPELLBONUS::before { content:var(--spellbonus); }
+#SPELLSTAT::before { content:'CH'; }
+#SPELLSLOT::before { content:var(--spellslots); }
+.riche-spell-stats-2 { height:40px;background-color:#eeeeee;border-radius:15px;box-shadow:3px 3px 5px rgba(68,68,68,.065);font:800 25px DM Serif Display;text-align:center;line-height:20px;height:41px;padding:17px;flex-grow:2; }
+.riche-spell-stats-2 div { background:linear-gradient(to bottom right,#7EBAEE,#F0A06F);background-clip: text;-webkit-background-clip: text;color: transparent; }
+
+.riche-spells { margin-top:210px;margin-left:-15px;opacity:0;position:absolute;z-index:1;width:420px;padding-right:10px;height:680px;overflow:auto;pointer-events:none;transition:.5s all; }
+.riche-spells-1 { background-color:#eeeeee;border-radius:15px;box-shadow:3px 3px 5px rgba(68,68,68,.065);padding:20px;margin-top:20px; }
+.riche-spells-1 div { background-color:#444444;border-radius:15px 0px 15px 0px;margin:-20px 30px 20px -20px;padding:15px 0px 15px 15px;color:#eeeeee;display:flex;width:100px;float:left;justify-content:center; }
+.riche-spells-1 div input[type=number] { width:30px;padding:0px;border:none!important;background:transparent;font:800 20px DM Serif Display;line-height:25px;height:25px;color:#e3e3e3; }
+.riche-spells-1 div span { display:block;font:800 20px DM Serif Display;line-height:25px;padding-right:20px; }
+.riche-spells-1 h1 { margin:0px;font:800 28px DM Serif Display;line-height:30px;padding-top:5px;padding-bottom:20px;letter-spacing:.5px; }
+.riche-spells-1 textarea { width:94%;background-color:#eeeeee;padding:10px;border:none;font:12px Roboto;line-height:15px;height:100px;color:#444444; }
+.riche-spells::-webkit-scrollbar { width:0px;background-color:transparent; }
+.riche-spells::-webkit-scrollbar-thumb {  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#riche-tab1:checked ~ .riche-img, #riche-tab1:checked ~ .riche-dice { opacity:1!important;pointer-events:auto!important;margin-left:475px!important; }
+#riche-tab1:checked ~ .riche-health { opacity:1!important;pointer-events:auto!important;margin-top:210px!important; }
+#riche-tab1:checked ~ .riche-weapons { opacity:1!important;pointer-events:auto!important;margin-top:390px!important; }
+#riche-tab1:checked ~ .riche-skills { opacity:1!important;pointer-events:auto!important;margin-top:620px!important; }
+
+#riche-tab2:checked ~ .riche-spell-stats { opacity:1!important;pointer-events:auto!important;margin-top:210px!important; }
+#riche-tab2:checked ~ .riche-spells { opacity:1!important;pointer-events:auto!important;margin-left:35px!important; } 
+#riche-tab2:checked ~ .riche-dice { opacity:1!important;pointer-events:auto!important;margin-left:475px!important; }
