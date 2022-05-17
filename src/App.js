@@ -49,7 +49,7 @@ class App extends React.Component {
         };
     }
 
-    handleLoginClick() {
+    handleButtonClick() {
         this.setState({isLoggedIn: true});
     }
 
