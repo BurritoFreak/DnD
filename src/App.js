@@ -26,7 +26,6 @@ function App() {
     return (
         <div className="App">
             <CharacterList characters={characters} refreshCharacters={loadCharacters}/>
-            <CharacterSheet character={characters[1]} refreshCharacters={loadCharacters}/>
         </div>
     );
 }
