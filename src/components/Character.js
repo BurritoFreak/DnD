@@ -28,7 +28,7 @@ const Character = ({ character, refreshCharacters }) => {
 
     function addComponent(character) {
         return (
-            <CharacterSheet character={character} />
+            <CharacterSheet character={character} refreshCharacters={refreshCharacters} />
         )
     }
     
