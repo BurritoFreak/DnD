@@ -26,16 +26,10 @@ const Character = ({ character, refreshCharacters }) => {
     };
     
     return (
-        <div class="box">
-        <a href = "/characters">
+        <button class="custom-btn btn-15">
             <h2>{character.Player}</h2>
-            <div className="character-card">
-                <div className="character-card-body">
-                    <h3>{character.Name}</h3>
-                </div>
-            </div>
-            </a>
-        </div>
+            <h3>{character.Name}</h3>
+        </button>
     )
 };
 //onClick={window.location.href = '/' + character.Player}
