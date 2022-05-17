@@ -26,15 +26,15 @@ const Character = ({ character, refreshCharacters }) => {
         }
     };
 
-    //function addComponent(character) {
-    //    return (
-    //        <CharacterSheet character={character} refreshCharacters={refreshCharacters} />
-    //    )
-    //}
+    function addComponent(character) {
+        return (
+            <CharacterSheet character={character} />
+        )
+    }
     
     return (
         <div class="box">
-        <button class="custom-btn btn-15">
+        <button class="custom-btn btn-15" onclick={addComponent(character)}>
             <h2>{character.Player}</h2>
             <h3>{character.Name}</h3>
         </button>

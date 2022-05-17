@@ -8,7 +8,7 @@ import Traits from "./Characters/Traits";
 import Spells from "./Characters/Spells";
 
 
-const CharacterSheet = ({ character , refreshCharacters }) => {
+const CharacterSheet = ({ character }) => {
     return (
         <section id="character-sheet">
         <div class="riche">
