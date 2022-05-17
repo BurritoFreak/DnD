@@ -27,6 +27,7 @@ const Character = ({ character, refreshCharacters }) => {
     };
 
     function addComponent(character) {
+        console.log(character.id);
         return (
             <CharacterSheet character={character} />
         )
