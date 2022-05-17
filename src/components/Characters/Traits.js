@@ -9,7 +9,7 @@ const Traits = ({ character }) => {
         </div>
         <div class="riche-skills-right">
         <div class="riche-skills-right-1">
-        {character.Traits.map((trait) => 
+        {JSON.parse(character.Traits).map((trait) => 
             <div><input type="checkbox" id="riche-skill5" checked/>
         <label for="riche-skill5">+ <span class="skill5">{trait.Skill}</span></label>
         <div class="riche-skills-blurb">{trait.Desc}</div>
