@@ -34,7 +34,7 @@ const Character = ({ character, refreshCharacters }) => {
     
     return (
         <div class="box">
-        <button class="custom-btn btn-15" onclick={addComponent(character)}>
+        <button class="custom-btn btn-15">
             <h2>{character.Player}</h2>
             <h3>{character.Name}</h3>
         </button>
