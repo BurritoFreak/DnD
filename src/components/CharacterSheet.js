@@ -1,5 +1,4 @@
 import React from "react";
-import Character from "./Character";
 import Stats from "./Characters/Stats";
 import Dice from "./Characters/Dice";
 import Profile from "./Characters/Profile";
