@@ -1,4 +1,5 @@
 import React from 'react';
+import CharacterSheet from './CharacterSheet';
 
 const Character = ({ character, refreshCharacters }) => {
     const updatedCharacter = async () => {
@@ -24,10 +25,16 @@ const Character = ({ character, refreshCharacters }) => {
             console.log(error);
         }
     };
+
+    function addComponent(character) {
+        return (
+            <CharacterSheet character={character} />
+        )
+    }
     
     return (
         <div class="box">
-        <button class="custom-btn btn-15">
+        <button class="custom-btn btn-15" onclick={addComponent(character)}>
             <h2>{character.Player}</h2>
             <h3>{character.Name}</h3>
         </button>
