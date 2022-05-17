@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Switch, useParams } from 'react-router-dom';
 
 import "./App.css";
 import CharacterList from "./components/CharacterList";
@@ -26,7 +25,7 @@ function App() {
 
     return (
         <div className="App">
-            <CharacterList characters={characters} />
+            <CharacterList characters={characters} refreshCharacters={loadCharacters}/>
         </div>
     );
 }
